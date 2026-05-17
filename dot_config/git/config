@@ -1,0 +1,25 @@
+[user]
+    name = Arkady Chesnokov
+    email = arkady-chesnokof@yandex.ru
+    signingKey = ~/.ssh/id_ed25519.pub
+
+[core]
+    editor = nvim
+    autocrlf = input
+    excludesFile = ~/.config/git/ignore
+
+[alias]
+    st = status -sb
+    lg = log --oneline --graph --decorate --all
+    undo = reset HEAD~1 --mixed
+    wip = commit -am "wip"
+    aliases = config --get-regexp alias
+
+[gpg]
+    format = ssh
+
+[commit]
+    gpgSign = true
+
+[tag]
+    gpgSign = true
