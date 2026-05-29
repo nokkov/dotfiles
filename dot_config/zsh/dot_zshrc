@@ -1,6 +1,6 @@
 ZSH_THEME="robbyrussell"
 
-plugins=(git rust direnv kubectl helm sudo extract colored-man-pages command-not-found copypath copyfile web-search per-directory-history you-should-use )
+plugins=(git rust direnv z kubectl helm sudo extract colored-man-pages command-not-found copypath copyfile web-search per-directory-history you-should-use )
 
 # export YSU_IGNORED_ALIASES=("ls eza kubectl")
 
