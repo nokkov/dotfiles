@@ -7,7 +7,6 @@ export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
 export ZSH="$ZDOTDIR/ohmyzsh"
 export HISTFILE="$XDG_STATE_HOME/zsh/history"
 
-export SUDO="doas"
 export EDITOR="nvim"
 export VISUAL="nvim"
 export GIT_CONFIG_GLOBAL="$XDG_CONFIG_HOME/git/config"
