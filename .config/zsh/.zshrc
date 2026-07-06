@@ -1,6 +1,10 @@
 # Auto-install oh-my-zsh if missing
 if [ ! -d "$ZSH" ]; then
-    curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | ZSH="$ZSH" sh -s -- --unattended --keep-zshrc
+    local _omz_installer
+    _omz_installer=$(mktemp /tmp/omz-install.XXXXXX.sh)
+    curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -o "$_omz_installer"
+    ZSH="$ZSH" sh "$_omz_installer" --unattended --keep-zshrc
+    rm -f "$_omz_installer"
 fi
 
 # Auto-install you-should-use plugin if missing
