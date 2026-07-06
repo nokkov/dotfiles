@@ -49,6 +49,7 @@ alias ....="cd ../../.."
 alias ~="cd ~"
 alias -- -="cd -"
 
+alias dotfiles='git --work-tree=$HOME --git-dir=$HOME/.dotfiles'
 alias mkdir="mkdir -pv"
 alias vnv="nvim ~/.config/nvim/init.lua"
 

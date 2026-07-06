@@ -12,4 +12,3 @@ export EDITOR="nvim"
 export VISUAL="nvim"
 export GIT_CONFIG_GLOBAL="$XDG_CONFIG_HOME/git/config"
 
-alias dotfiles='git --work-tree=$HOME --git-dir=$HOME/.dotfiles'
