@@ -3,7 +3,10 @@
 ## Setup
 
 ```bash
+# клонирует только git-метаданные в ~/.dotfiles (без рабочих файлов)
 git clone --bare <repo-url> ~/.dotfiles
+
+# разворачивает файлы из репо прямо в $HOME
 git --work-tree=$HOME --git-dir=$HOME/.dotfiles checkout
 ```
 
