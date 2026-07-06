@@ -1,6 +1,16 @@
+# Auto-install oh-my-zsh if missing
+if [ ! -d "$ZSH" ]; then
+    curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | ZSH="$ZSH" sh -s -- --unattended --keep-zshrc
+fi
+
+# Auto-install you-should-use plugin if missing
+if [ ! -d "$ZSH/custom/plugins/you-should-use" ]; then
+    git clone https://github.com/MichaelAquilina/zsh-you-should-use.git "$ZSH/custom/plugins/you-should-use"
+fi
+
 ZSH_THEME="robbyrussell"
 
-plugins=(git rust direnv z kubectl helm sudo extract colored-man-pages command-not-found copypath copyfile web-search per-directory-history you-should-use )
+plugins=(git rust direnv z kubectl helm sudo extract colored-man-pages command-not-found copypath copyfile web-search per-directory-history you-should-use)
 
 # export YSU_IGNORED_ALIASES=("ls eza kubectl")
 
