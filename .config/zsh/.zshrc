@@ -1,3 +1,5 @@
+mkdir -p "$(dirname "$HISTFILE")"
+
 # Auto-install oh-my-zsh if missing
 if [ ! -d "$ZSH" ]; then
     local _omz_installer
